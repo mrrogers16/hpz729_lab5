@@ -6,5 +6,6 @@ package edu.utsa.cs3443.hpz729_lab5.model;
         boolean isVegetarian();
         String getName();
         String getType();
+        int getZone();
     }
 

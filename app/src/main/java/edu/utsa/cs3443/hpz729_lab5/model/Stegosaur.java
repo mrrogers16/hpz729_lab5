@@ -4,11 +4,22 @@ public abstract class Stegosaur implements Dinosaur
 {
     String name;
     boolean vegetarian;
+    int zoneID;
     //Stegosaur constructor
-    public Stegosaur(String name, boolean vegetarian)
+    public Stegosaur(String name, boolean vegetarian, int zoneID)
     {
         this.name = name;
         this.vegetarian = vegetarian;
+        this.zoneID = zoneID;
+    }
+    public void setZone(int zoneID, Stegosaur stegosaur)
+    {
+        stegosaur.zoneID = zoneID;
+    }
+
+    public int getZone()
+    {
+        return zoneID;
     }
     //Stegosaur-name: Getter
     public String getName()

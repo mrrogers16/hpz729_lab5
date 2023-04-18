@@ -6,9 +6,9 @@ public class Park {
     Dinosaur[] dinoList = null;
 
     // Constructor
-    public Park(String name, int max) {
+    public Park(String name, int maxCapacity) {
         this.name = name;
-        this.maxCapacity = max;
+        this.maxCapacity = maxCapacity;
     }
 
     // Takes in Dinosaur object, performs null and maxCapacity checks, creates a new

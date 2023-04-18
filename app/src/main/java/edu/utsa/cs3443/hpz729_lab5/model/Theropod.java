@@ -4,12 +4,23 @@ public abstract class Theropod implements Dinosaur
 {
     String name;
     boolean vegetarian;
+    int zoneID;
 
     //Theropod Constructor
-    public Theropod(String name, boolean vegetarian)
+    public Theropod(String name, boolean vegetarian, int zoneID)
     {
         this.name = name;
         this.vegetarian = vegetarian;
+        this.zoneID = zoneID;
+    }
+    public void setZone(int zoneID, Theropod theropod)
+    {
+        theropod.zoneID = zoneID;
+    }
+
+    public int getZone()
+    {
+        return zoneID;
     }
     //Theropod-name: Getter
     public String getName()

@@ -6,13 +6,128 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="603dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="295dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/jpl2"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="405dp"
+        android:layout_height="51dp"
+        android:text="SELECT A ZONE TO CONTINUE"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="683dp" />
+
+    <Button
+        android:id="@+id/buttonTR"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:text="TR"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <Button
+        android:id="@+id/buttonTY"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="TY"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <Button
+        android:id="@+id/buttonG"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="G"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <Button
+        android:id="@+id/buttonR"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="R"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="D"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <Button
+        android:id="@+id/buttonX"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="252dp" />
+    />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

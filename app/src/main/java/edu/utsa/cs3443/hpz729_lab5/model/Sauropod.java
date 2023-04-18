@@ -4,12 +4,24 @@ public abstract class Sauropod implements Dinosaur
 {
     String name;
     boolean vegetarian;
+    int zoneID;
 
     //Sauropod Constructor
-    public Sauropod(String name, boolean vegetarian)
+    public Sauropod(String name, boolean vegetarian, int zoneID)
     {
         this.name = name;
         this.vegetarian = vegetarian;
+        this.zoneID = zoneID;
+    }
+
+    public void setZone(int zoneID, Sauropod sauropod)
+    {
+        sauropod.zoneID = zoneID;
+    }
+
+    public int getZone()
+    {
+        return zoneID;
     }
     //Sauropod-name: Getter
     public String getName()

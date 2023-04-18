@@ -2,6 +2,18 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 public class Zone {
 
+    private int zoneID;
+
+    public Zone(int zoneID)
+    {
+        this.zoneID = zoneID;
+    }
+
+    public int getZoneID()
+    {
+        return zoneID;
+    }
+
 
     //Use hashmap for VegetarianMap
     //public class VegetarianMap extends HashMap<String, Boolean> {}
