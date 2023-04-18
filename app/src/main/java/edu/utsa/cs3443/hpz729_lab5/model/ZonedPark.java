@@ -23,7 +23,7 @@ public class ZonedPark extends Park
         zoneList.add(zone);
     }
 
-    public Zone getZoneByID(int zoneID, ArrayList<Zone> zoneList)
+    public Zone getZoneByID(String current, ArrayList<Zone> zoneList)
     {
         for(int i = 0; i < zoneList.size(); i++)
         {

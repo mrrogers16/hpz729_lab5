@@ -2,7 +2,7 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 public class Zone {
 
-    private int zoneID;
+    private String current;
 
     public Zone(int zoneID)
     {
@@ -29,18 +29,7 @@ public class Zone {
     // }
     //will run when park is created or Main Activity is ran
 
-    //REUSE BufferReader
-    //public BufferedFileReader extends BufferedReader()
-    //  private String fileName;
-    //public BufferedFileReader(String filename)
-    //{
-    //    super(new FileReader(fileName));
-    //    this.fileName = fileName;
-    //}
-    //public String getFileName()
-    //{
-    //    return fileName;
-    //}
+
 
     //Maybe MAIN
     //BufferedFileReader bfr = new BufferedFileReader("myfile.txt");
@@ -87,6 +76,37 @@ public class Zone {
 
     //Relocate throws exception
     //Mispelled dinos, non existent zones use toast messages to tell user incorrect inputs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //DONE------------------------------------------------------------------------------------------
+
+
+    //REUSE BufferReader
+    //public BufferedFileReader extends BufferedReader()
+    //  private String fileName;
+    //public BufferedFileReader(String filename)
+    //{
+    //    super(new FileReader(fileName));
+    //    this.fileName = fileName;
+    //}
+    //public String getFileName()
+    //{
+    //    return fileName;
+    //}
 
 
 }
