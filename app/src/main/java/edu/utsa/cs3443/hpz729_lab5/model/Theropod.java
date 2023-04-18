@@ -1,26 +1,33 @@
 package edu.utsa.cs3443.hpz729_lab5.model;
 
+import android.telephony.SignalStrength;
+
 public abstract class Theropod implements Dinosaur
 {
     String name;
     boolean vegetarian;
-    int zoneID;
-
+    String type;
+    String currentZone;
+    String location;
+//dino name,type,current zone location
     //Theropod Constructor
-    public Theropod(String name, boolean vegetarian, int zoneID)
+    public Theropod(String name, String type, String currentZone, String location, boolean vegetarian)
     {
         this.name = name;
+        this.type = type;
+        this.currentZone = currentZone;
+        this.location = location;
         this.vegetarian = vegetarian;
-        this.zoneID = zoneID;
+
     }
-    public void setZone(int zoneID, Theropod theropod)
+    public void setZone(String currentZone)
     {
-        theropod.zoneID = zoneID;
+        this.currentZone = currentZone;
     }
 
-    public int getZone()
+    public String getCurrentZone()
     {
-        return zoneID;
+        return currentZone;
     }
     //Theropod-name: Getter
     public String getName()
@@ -70,7 +77,5 @@ public abstract class Theropod implements Dinosaur
     }
     //Abstract method getSubType for subclass
     public abstract String getSubType();
-
-
 
 }

@@ -2,14 +2,15 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 import androidx.annotation.DoNotInline;
 
+import java.security.DigestInputStream;
 import java.time.ZoneId;
 import java.util.ArrayList;
 
 public class ZonedPark extends Park
 {
     private int zoneID;
-    private ArrayList<Zone> zoneList = null;
-    private ArrayList<Dinosaur> dinoList = null;
+    private ArrayList<Zone> zoneList = new ArrayList<>();
+    private ArrayList<Dinosaur> dinoList = new ArrayList<>();
 
     public ZonedPark(String name, int max)
     {
@@ -46,9 +47,16 @@ public class ZonedPark extends Park
         }
         return null;
     }
-    //addZone(from zones.csv)
-    //getZone
-    //getDinoByZone(will go through the dino array and return by zone)
-    //getDinosaur(takes in name of dino and returns associated dino object)
-    //relocate
+    public Dinosaur getDinoByName(String dinoName)
+    {
+        for(int i = 0; i < dinoList.size(); i++)
+        {
+            Dinosaur dino = dinoList.get(i);
+            if(dino.getName().equals(dinoName))
+            {
+                return dino;
+            }
+        }
+        return null;
+    }
 }

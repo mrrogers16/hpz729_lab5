@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button button1 = new Button(R.id.buttonTR);
-        Button button2 = new Button(R.id.buttonTY);
-        Button button3 = new Button(R.id.buttonG);
-        Button button4 = new Button(R.id.buttonR);
-        Button button5 = new Button(R.id.buttonD);
-        Button button6 = new Button(R.id.buttonX);
-        Button button7 = new Button(R.id.buttonB);
+        Button button1 = findViewById(R.id.buttonTR);
+        Button button2 = findViewById(R.id.buttonTY);
+        Button button3 = findViewById(R.id.buttonG);
+        Button button4 = findViewById(R.id.buttonR);
+        Button button5 = findViewById(R.id.buttonD);
+        Button button6 = findViewById(R.id.buttonX);
+        Button button7 = findViewById(R.id.buttonB);
 
         button1.setOnClickListener(new MainController(this));
         button2.setOnClickListener(new MainController(this));
