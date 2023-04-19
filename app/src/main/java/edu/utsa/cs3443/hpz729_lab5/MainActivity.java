@@ -31,6 +31,38 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new MainController(this));
         button7.setOnClickListener(new MainController(this));
 
+        //Initialize everything here
+        //Build view and buttons
+        //Next activity needs info but can only pass primitive types as an extra
+        //Singleton pattern used
+        //SINGLETON CLASS NOTES
+        //public class Singleton(){}
+        //private static Singleton singletonInstance = null;
+        //CONSTRUCTOR
+        //private Singleton(String name, int maxCap){
+        //      this.name = name;
+        //      this.number = maxCap;
+        //  }
+        //
+        //public static Singleton getSingletonInstance(String name, int maxCap)
+        //{
+        //      if(singletonInstance == null)
+        //      {
+        //          singletonInstance = new Singleton(name, maxCap);
+        //      }
+        //    return singletonInstance;
+        //public static Singleton getSingletonInstance()
+        //{
+        //      return SingletonInstance;
+        //}
+        //
+
+
+
+
+
+
+
 
     }
 }
