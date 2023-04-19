@@ -2,16 +2,24 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 public class Zone {
 
-    private String current;
+    private String currentZone;
 
-    public Zone(int zoneID)
+    /**
+     * Zone Constructor
+     * @param currentZone
+     */
+    public Zone(String currentZone)
     {
-        this.zoneID = zoneID;
+        this.currentZone = currentZone;
     }
 
-    public int getZoneID()
+    public String getCurrentZone()
     {
-        return zoneID;
+        return currentZone;
+    }
+    public void setCurrentZone(String currentZone)
+    {
+        this.currentZone = currentZone;
     }
 
 

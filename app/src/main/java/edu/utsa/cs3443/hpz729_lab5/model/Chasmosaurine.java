@@ -7,14 +7,19 @@ public abstract class Chasmosaurine implements Dinosaur{
     String name;
     boolean vegetarian;
     int zoneID;
+    String type;
+    String currentZone;
+    String location;
 
 
     //Dinosaur->Chasmosaurine
-    public Chasmosaurine(String name, boolean vegetarian, int zoneID)
+    public Chasmosaurine(String name, String type, String currentZone, String location, boolean vegetarian)
     {
         this.name = name;
+        this.type = type;
+        this.currentZone = currentZone;
+        this.location = location;
         this.vegetarian = vegetarian;
-        this.zoneID = zoneID;
     }
 
     public String getName() {
@@ -59,6 +64,7 @@ public abstract class Chasmosaurine implements Dinosaur{
 
     public int getZone()
     {
+
         return zoneID;
     }
     //Abstract method getSubType for subclass

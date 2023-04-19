@@ -1,14 +1,10 @@
 package edu.utsa.cs3443.hpz729_lab5.model;
 
-import androidx.annotation.DoNotInline;
-
-import java.security.DigestInputStream;
-import java.time.ZoneId;
 import java.util.ArrayList;
 
 public class ZonedPark extends Park
 {
-    private int zoneID;
+
     private ArrayList<Zone> zoneList = new ArrayList<>();
     private ArrayList<Dinosaur> dinoList = new ArrayList<>();
 
@@ -17,30 +13,30 @@ public class ZonedPark extends Park
         super(name, max);
     }
 
-    public void addZone(int zoneID, ArrayList<Zone> zoneList)
+    public void addZone(String currentZone)
     {
-        Zone zone = new Zone(zoneID);
+        Zone zone = new Zone(currentZone);
         zoneList.add(zone);
     }
 
-    public Zone getZoneByID(String current, ArrayList<Zone> zoneList)
+    public Zone getZoneByID(String currentZone)
     {
         for(int i = 0; i < zoneList.size(); i++)
         {
             Zone zone = zoneList.get(i);
-            if(zone.getZoneID() == zoneID)
+            if(zone.getCurrentZone().equalsIgnoreCase(currentZone))
             {
                 return zone;
             }
         }
         return null;
     }
-    public Dinosaur getDinoByZone(int zoneID, ArrayList<Dinosaur> dinoList)
+    public Dinosaur getDinoByZone(String currentZone)
     {
         for(int i = 0; i < dinoList.size(); i++)
         {
             Dinosaur dino = dinoList.get(i);
-            if(dino.getZone() == zoneID)
+            if(dino.getCurrentZone().equalsIgnoreCase(currentZone))
             {
                 return dino;
             }

@@ -4,9 +4,9 @@ public class Tyrannosaurus extends Theropod
 {
 
     //Constructor
-    public Tyrannosaurus(String name, boolean vegetarian, int zoneID)
+    public Tyrannosaurus(String name, String type, String currentZone, String location, boolean vegetarian)
     {
-        super(name, vegetarian, zoneID);
+        super(name, type, currentZone, location, vegetarian);
     }
     //Theropod->Tyrannosaurus-subType: Getter
     @Override

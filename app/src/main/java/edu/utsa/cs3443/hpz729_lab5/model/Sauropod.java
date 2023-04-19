@@ -4,24 +4,35 @@ public abstract class Sauropod implements Dinosaur
 {
     String name;
     boolean vegetarian;
-    int zoneID;
+    String type;
+    String currentZone;
+    String location;
+
 
     //Sauropod Constructor
-    public Sauropod(String name, boolean vegetarian, int zoneID)
+    public Sauropod(String name, String type, String currentZone, String location, boolean vegetarian)
     {
         this.name = name;
+        this.type = type;
+        this.currentZone = currentZone;
+        this.location = location;
         this.vegetarian = vegetarian;
-        this.zoneID = zoneID;
+
+    }
+    public String getLocation() {
+        return location;
     }
 
-    public void setZone(int zoneID, Sauropod sauropod)
-    {
-        sauropod.zoneID = zoneID;
+    public void setLocation(String location) {
+        this.location = location;
+    }
+    @Override
+    public String getCurrentZone() {
+        return currentZone;
     }
 
-    public int getZone()
-    {
-        return zoneID;
+    public void setCurrentZone(String currentZone) {
+        this.currentZone = currentZone;
     }
     //Sauropod-name: Getter
     public String getName()
@@ -67,6 +78,10 @@ public abstract class Sauropod implements Dinosaur
     public String getType()
     {
         return "Sauropod: " + getSubType();
+    }
+    public void setType(String type)
+    {
+        this.type = type;
     }
     //Abstract getSubType for subclass
     public abstract String getSubType();

@@ -2,44 +2,61 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 public abstract class Stegosaur implements Dinosaur
 {
-    String name;
-    boolean vegetarian;
-    int zoneID;
+    private String name;
+    private boolean vegetarian;
+    private String type;
+    private String currentZone;
+    private String location;
+
     //Stegosaur constructor
-    public Stegosaur(String name, boolean vegetarian, int zoneID)
+    public Stegosaur(String name, String type, String currentZone, String location, boolean vegetarian)
     {
         this.name = name;
+        this.type = type;
+        this.currentZone = currentZone;
+        this.location = location;
         this.vegetarian = vegetarian;
-        this.zoneID = zoneID;
+
     }
-    public void setZone(int zoneID, Stegosaur stegosaur)
+    public void setCurrentZone(String currentZone)
     {
-        stegosaur.zoneID = zoneID;
+        this.currentZone = currentZone;
     }
 
-    public int getZone()
+    public String getCurrentZone()
     {
-        return zoneID;
+        return currentZone;
     }
-    //Stegosaur-name: Getter
+
+
     public String getName()
     {
         return name;
     }
-    //Stegosaur-name: Setter
+
     public void setName(String name)
     {
         this.name = name;
     }
-    //Stegosaur-vegetarian: Getter
+
     public boolean isVegetarian()
     {
         return vegetarian;
     }
-    //Stegosaur-vegetarian: Getter
+
     public void setVeggies(boolean vegetarian)
     {
         this.vegetarian = vegetarian;
+    }
+
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     //Stegosaur toString() method
@@ -66,6 +83,9 @@ public abstract class Stegosaur implements Dinosaur
     public String getType()
     {
         return "Stegosaur: " + getSubType();
+    }
+    public void setType(String type) {
+        this.type = type;
     }
     //Abstract getSubType for subclass
     public abstract String getSubType();

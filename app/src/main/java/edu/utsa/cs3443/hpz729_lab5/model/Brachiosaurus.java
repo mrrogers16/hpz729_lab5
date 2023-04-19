@@ -2,12 +2,10 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 public class Brachiosaurus extends Sauropod
 {
-    //Sauropod->Brachiosaurus: Constructor
-    public Brachiosaurus(String name, boolean vegetarian, int zoneID)
+    //Dinosaur->Sauropod->Brachiosaurus: Constructor
+    public Brachiosaurus(String name, String type, String currentZone, String location, boolean vegetarian)
     {
-        super(name, vegetarian, zoneID);
-        this.name = name;
-        this.vegetarian = vegetarian;
+        super(name, type, currentZone, location, vegetarian);
     }
     //Sauropod->Brachiosaurus-name: Getter
     public String getName()
