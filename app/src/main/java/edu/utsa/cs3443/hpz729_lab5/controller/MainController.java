@@ -6,9 +6,19 @@ import android.view.View;
 
 public class MainController implements View.OnClickListener{
 
+    private String currentZone;
 
-    public MainController(Context context)
+
+    public MainController(String currentZone)
     {
+        this.currentZone = currentZone;
+    }
+
+    public String getCurrentZone() {
+        return currentZone;
+    }
+
+    public void setCurrentZone(String currentZone) {
         this.currentZone = currentZone;
     }
     /**
