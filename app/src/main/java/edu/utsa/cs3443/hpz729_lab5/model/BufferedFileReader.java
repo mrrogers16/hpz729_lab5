@@ -27,7 +27,6 @@ public class BufferedFileReader extends BufferedReader{
     }
 }
 
-
 //public class BufferedFileReader extends BufferedReader() {
 //    public BufferedFileReader(Reader in) {
 //        super(in);
@@ -47,7 +46,5 @@ public class BufferedFileReader extends BufferedReader{
 //            return fileName;
 //        }
 //}
-
-
     //hashmap has put and get methods
 

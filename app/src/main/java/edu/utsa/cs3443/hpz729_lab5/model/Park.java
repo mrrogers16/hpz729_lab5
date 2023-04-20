@@ -1,5 +1,7 @@
 package edu.utsa.cs3443.hpz729_lab5.model;
 
+import java.util.ArrayList;
+
 public class Park {
     String name;
     int maxCapacity;
@@ -9,6 +11,7 @@ public class Park {
     public Park(String name, int maxCapacity) {
         this.name = name;
         this.maxCapacity = maxCapacity;
+        dinoList = new Dinosaur[maxCapacity];
     }
 
     // Takes in Dinosaur object, performs null and maxCapacity checks, creates a new
