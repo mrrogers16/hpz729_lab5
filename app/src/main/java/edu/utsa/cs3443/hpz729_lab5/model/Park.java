@@ -3,16 +3,28 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 import java.util.ArrayList;
 
 public class Park {
+    private static Park parkInstance = null;
     String name;
     int maxCapacity;
     Dinosaur[] dinoList = null;
 
     // Constructor
-    public Park(String name, int maxCapacity) {
+    private Park(String name, int maxCapacity) {
         this.name = name;
         this.maxCapacity = maxCapacity;
         dinoList = new Dinosaur[maxCapacity];
     }
+
+    public static Park getParkInstance(String name, int maxCapacity)
+    {
+        if(parkInstance == null)
+        {
+            parkInstance = new Park(name, maxCapacity);
+        }
+        return parkInstance;
+    }
+
+    public static Park getParkInstance(){return parkInstance;}
 
     // Takes in Dinosaur object, performs null and maxCapacity checks, creates a new
     // array with size + 1, copies contents of
