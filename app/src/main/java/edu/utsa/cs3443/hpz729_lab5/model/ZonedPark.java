@@ -4,14 +4,26 @@ import java.util.ArrayList;
 
 public class ZonedPark extends Park
 {
-
+    private static ZonedPark zonedParkInstance;
     private ArrayList<Zone> zoneList = new ArrayList<>();
     private ArrayList<Dinosaur> dinoList = new ArrayList<>();
 
-    public ZonedPark(String name, int max)
+    private ZonedPark(String name, int max)
     {
         super(name, max);
     }
+
+    public static ZonedPark getZonedParkInstance(String name, int maxCapacity)
+    {
+        if(zonedParkInstance == null)
+        {
+            zonedParkInstance  = new ZonedPark(name, maxCapacity);
+        }
+        return zonedParkInstance;
+    }
+
+    public static ZonedPark getZonedParkInstance(){return zonedParkInstance;}
+
 
     public void addZone(String currentZone)
     {
