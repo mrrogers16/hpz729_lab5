@@ -31,3 +31,12 @@ public class MainController implements View.OnClickListener{
 
     }
 }
+
+//android:layout_width="match_parent"
+//android:layout_height="wrap_content"
+//android:inputType="text"
+//android:text="" />
+
+//EditText myEditText = findViewById(R.id.nameText);
+//...
+//String input = myEditText.getText().toString();

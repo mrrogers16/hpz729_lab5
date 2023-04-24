@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         //Build view and buttons
         //Next activity needs info but can only pass primitive types as an extra
 
+        //
+
 
 
 
