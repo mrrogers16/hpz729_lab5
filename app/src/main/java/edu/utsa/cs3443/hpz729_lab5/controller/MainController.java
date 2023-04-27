@@ -4,10 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
+import edu.utsa.cs3443.hpz729_lab5.ZoneActivity;
+
 public class MainController implements View.OnClickListener{
 
     private String currentZone;
-
 
     public MainController(String currentZone)
     {
@@ -25,10 +26,11 @@ public class MainController implements View.OnClickListener{
      * @param view
      */
     @Override
-    public void onClick(View view) {
-       // Intent intent = new Intent(this, ZoneActivity.class);
-
-
+    public void onClick(View view)
+    {
+        Intent intent = new Intent(view.getContext(), ZoneActivity.class);
+        intent.putExtra("ZoneID", currentZone);
+        view.getContext().startActivity(intent);
     }
 }
 
