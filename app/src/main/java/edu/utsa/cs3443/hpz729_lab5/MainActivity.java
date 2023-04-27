@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        //button1.setOnClickListener(new MainController("TR"));
+        button1.setOnClickListener(new MainController("TR"));
         button2.setOnClickListener(new MainController("TY"));
         button3.setOnClickListener(new MainController("G"));
         button4.setOnClickListener(new MainController("R"));
