@@ -31,11 +31,11 @@
         android:textColor="@color/white"
         android:fontFamily="@font/train_one"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/park_map"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/park_map"
         android:layout_width="180dp"
         android:layout_height="87dp"
         android:layout_marginStart="2dp"

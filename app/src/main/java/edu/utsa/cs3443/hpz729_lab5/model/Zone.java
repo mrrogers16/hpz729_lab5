@@ -2,24 +2,52 @@ package edu.utsa.cs3443.hpz729_lab5.model;
 
 public class Zone {
 
-    private String currentZone;
+    private String zoneName;
+    private String risk_level;
+    private String zone_abbreviation;
+    private int guest_count;
 
     /**
      * Zone Constructor
-     * @param currentZone
+     * @param
      */
-    public Zone(String currentZone)
+    public Zone(String zoneName, String risk_level, String zone_abbreviation, int guest_count)
     {
-        this.currentZone = currentZone;
+        this.zoneName = zoneName;
+        this.risk_level = risk_level;
+        this.zone_abbreviation = zone_abbreviation;
+        this.guest_count = guest_count;
+    }
+    public String getZoneName() {
+        return zoneName;
     }
 
-    public String getCurrentZone()
-    {
-        return currentZone;
+    public void setZoneName(String zoneName) {
+        this.zoneName = zoneName;
     }
-    public void setCurrentZone(String currentZone)
-    {
-        this.currentZone = currentZone;
+
+    public String getRisk_level() {
+        return risk_level;
+    }
+
+    public void setRisk_level(String risk_level) {
+        this.risk_level = risk_level;
+    }
+
+    public String getZone_abbreviation() {
+        return zone_abbreviation;
+    }
+
+    public void setZone_abbreviation(String zone_abbreviation) {
+        this.zone_abbreviation = zone_abbreviation;
+    }
+
+    public int getGuest_count() {
+        return guest_count;
+    }
+
+    public void setGuest_count(int guest_count) {
+        this.guest_count = guest_count;
     }
 
 
